@@ -1,0 +1,136 @@
+.card{
+    width: 300px;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    background-color: var(--cardBackground);
+}
+
+.content-imgs{
+    position: relative;
+}
+
+.content-imgs,.img,.hover-card{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.hover-card{
+    background-color: var(--colorHover);
+    top: 0;
+    height: calc(100% - 4px);
+}
+
+.icon{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hover-card, .icon{
+     opacity: 0;
+    position: absolute;
+}
+
+.content-imgs:hover .hover-card{
+    opacity: 0.4; 
+    transition: opacity 300ms ease;
+}
+
+.content-imgs:hover .icon{
+    opacity: 1;
+    transition: opacity 300ms ease;
+}
+
+.name-NTF{
+    font-weight: bold;
+    color: var(--nameNFT);
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.description{
+ color:var(--textColor);
+ font-size: 0.8rem;
+}
+
+.wrap-price-count{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.price{
+    color:var(--priceNFT);
+    font-weight: bold;
+    left: 1rem;
+}
+
+.count{
+    color:var(--textColor);
+}
+
+.price, .count{
+    font-size: 0.8rem;
+    position: relative
+}
+
+.eth,.clock{
+    position:absolute;
+    left: -1rem;
+    top: 0.2rem;
+}
+
+.line{
+  background-color: var(--line);
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+}
+
+.creator{
+    color: var(--textColor);
+    font-weight: normal;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+
+.name-creator{
+    color: var(--nameCreator);
+    font-size: 0.8rem;
+}
+
+.name-NTF:hover,.name-creator:hover{
+    color: var(--colorHover);
+    transition:color 350ms linear;
+}
+
+.content-img-creator{
+position: relative;
+display: block;
+}
+
+.img-creator{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0rem;
+    top: -0.3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+.name-creator,.name-NTF, .hover-card,.icon{
+    cursor: pointer;
+}
+
+.attribution{
+    color: white;
+    font-size: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+}

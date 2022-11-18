@@ -1,0 +1,10 @@
+:root{
+    --bodyBackground: hsl(217, 54%, 11%);
+    --cardBackground: hsl(216, 50%, 16%);
+--line:hsl(215, 32%, 27%);
+--nameNFT:hsl(0, 0%, 100%);
+--nameCreator:hsl(0, 0%, 100%);
+--colorHover: hsl(178, 100%, 50%);
+--textColor:hsl(215, 51%, 70%);;
+--priceNFT:hsl(178, 100%, 50%);
+}
